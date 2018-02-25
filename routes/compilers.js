@@ -94,7 +94,10 @@ lex_xml.addRule(/(\r\n)|\n/, function(){
     strText += lexema
 })
 // ------------------Tratamento dos pedidos-------
-/* GET users listing. */
+router.get('/', function(req, res, next) {
+    res.render('getInput')
+  })
+
 router.get('/input', function(req, res, next) {
   res.render('getInput')
 })
